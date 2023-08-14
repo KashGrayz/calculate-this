@@ -10,9 +10,17 @@ const Calculator: React.FC = () => {
     const handleButtonClick = (value:string) => {
         setInput ((prevInput) => prevInput + value);
     };
+    // Clearing inputs
+    const clearInput = () => {
+        setInput('');
+    };
 
     return(
-        <div>
+        <div className='calculator'>
+            <input
+            className='input'
+            type='text'
+            value={input}/>
 
         </div>
 
