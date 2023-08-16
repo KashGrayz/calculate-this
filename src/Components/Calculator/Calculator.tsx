@@ -20,7 +20,29 @@ const Calculator: React.FC = () => {
             <input
             className='input'
             type='text'
-            value={input}/>
+            value={input}
+            readOnly
+            />
+            <div>
+                <div>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                </div>
+                <div>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                </div>
+                <div>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                    <button className='button' onClick={() => handleButtonClick}></button>
+                </div>
+            </div>
 
         </div>
 
