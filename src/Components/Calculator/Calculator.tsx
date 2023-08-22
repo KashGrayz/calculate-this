@@ -24,15 +24,15 @@ const Calculator: React.FC = () => {
 
     return(
         <div className='calculator'>
-            <form>
+            
                 <input
                 className='input'
                 type='text'
                 value={input}
                 readOnly
                 />
-            </form>
-            <div className='keypad'>
+            
+            <div className='buttons'>
                 <div>
                     <button className='button' onClick={clearInput}>C</button>
                     <button className='button' onClick={() => handleButtonClick('+/-')}>+/-</button>
