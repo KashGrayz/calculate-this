@@ -22,6 +22,8 @@ const Calculator: React.FC = () => {
         setInput('');
     };
 
+    
+
     return(
         <div className='calculator'>
                 <input
