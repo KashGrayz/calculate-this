@@ -13,7 +13,7 @@
 }
 
 div, button{
-    
+    cursor: alias;
 }
 
 .buttons {
@@ -45,13 +45,32 @@ div, button{
     height: 2.5rem;
     border: none;
     border-bottom-right-radius: 10px;
-
+    background-color: rgb(255, 145, 0);
 }
+
+.buttong{
+    font-size: large;
+    width: 3.4rem;
+    height: 2.5rem;
+    border: none;
+    font-weight: lighter;
+    background-color: rgb(209, 209, 209);
+}
+
+.buttono{
+    font-size: large;
+    width: 3.4rem;
+    height: 2.5rem;
+    border: none;
+    font-weight: lighter;
+    background-color: rgb(246, 174, 41);
+}
+
 
 input{
     height: 5rem;
     width: 13rem;
-    background-color: rgb(68, 66, 66);
+    background-color: rgb(64, 64, 64);
     color: rgb(255, 255, 255);
     border: none;
     font-size: xx-large;
