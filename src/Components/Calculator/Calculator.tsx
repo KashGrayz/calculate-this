@@ -12,7 +12,7 @@ const Calculator: React.FC = () => {
         setInput ((prevInput) => prevInput + value);
     };
 
-    //Backspace button
+    // Backspace button
     const handleBackButtonClick = () => {
         setInput((prevInput) => prevInput.slice(0, -1));
     };
@@ -22,7 +22,17 @@ const Calculator: React.FC = () => {
         setInput('');
     };
 
-    
+    // Take input and execute calculation
+    const calculateResult = () => {
+        try {
+            setInput(eval(input).toString())
+        } catch (error) {
+            setInput('Error');
+        }
+    };
+
+    //Toggle positive and negative values
+    const
 
     return(
         <div className='calculator'>
@@ -62,7 +72,7 @@ const Calculator: React.FC = () => {
                         <button className='button1' onClick={() => handleButtonClick('0')}>0</button>
                         <button className='button' onClick={() => handleButtonClick('.')}>.</button>
                         <button className='button' onClick={handleBackButtonClick}>&lt;</button>
-                        <button className='button2' onClick={() => handleButtonClick('=')}>=</button>
+                        <button className='button2' onClick={calculateResult}>=</button>
                     </div>
                 </div>
             </div>
