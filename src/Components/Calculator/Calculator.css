@@ -8,9 +8,11 @@
     margin: 0 auto;
     /* border: 5px solid rgb(59, 59, 59); */
     background: black;
-    border-radius: 10px;
+    border-radius: 11px;
     width: auto;
     box-shadow: 0 0 20px rgb(134, 0, 251);
+    border: .05rem solid rgb(250, 124, 50);
+    border-bottom: .09rem solid rgb(250, 124, 50);
 }
 
 div, button{

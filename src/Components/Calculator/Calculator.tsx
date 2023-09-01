@@ -32,7 +32,15 @@ const Calculator: React.FC = () => {
     };
 
     //Toggle positive and negative values
-    const
+    const togglePositiveNegative = () => {
+        setInput((prevInput) => {
+            if (prevInput.charAt(0) === '-') {
+                return prevInput.slice(1);
+            } else{
+                return '-' + prevInput;
+            }
+        });
+    };
 
     return(
         <div className='calculator'>
@@ -46,7 +54,7 @@ const Calculator: React.FC = () => {
                 <div>
                     <div>
                         <button className='buttong' onClick={clearInput}>C</button>
-                        <button className='buttong' onClick={() => handleButtonClick('+/-')}>+/-</button>
+                        <button className='buttong' onClick={togglePositiveNegative}>+/-</button>
                         <button className='buttong' onClick={() => handleButtonClick('%')}>%</button>
                         <button className='buttono' onClick={() => handleButtonClick('/')}>/</button>
                     </div>
